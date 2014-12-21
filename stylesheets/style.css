@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inconsolata'), url(/fonts/inconsolata.ttf) format('truetype');
+}
+
+body {
+  padding: 20px 40px 20px 40px;
+  /*background: url('/../images/cardboard_flat.png');*/
+}
+
+.home-logo {
+	margin: 130px 0;
+}
+
+.home-logo h1 {
+	font-size: 68px;
+}
+.home code {
+	font-family: 'Inconsolata', sans-serif;
+	font-size: 30px;
+}
+
+.content {
+	margin: 70px 0;
+}
