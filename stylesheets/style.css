@@ -11,16 +11,17 @@ body {
   text-align: center;
 }
 
+code {
+	font-family: 'Source Code Pro', ;
+	font-size: 30px;
+}
+
 .home-logo {
 	margin: 130px 0;
 }
 
 .home-logo h1 {
 	font-size: 68px;
-}
-.home code {
-	font-family: 'Source Code Pro', ;
-	font-size: 30px;
 }
 
 .content {
