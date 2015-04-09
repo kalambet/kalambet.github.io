@@ -4,15 +4,24 @@
   <head>
     <title>Technogeek Labs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='shortcut icon' href='/images/tg.ico' type='image/x-icon' />
-    <link rel='stylesheet' href='./stylesheets/bootstrap.min.css'/>
-    <link rel='stylesheet' href='./stylesheets/bootstrap-theme.min.css'/>
-    <link rel='stylesheet' href='./stylesheets/style.css'/>
+    <link rel='shortcut icon' href='http://technogeek.io/images/tg.ico' type='image/x-icon' />
+    <link rel='stylesheet' href='http://technogeek.io/stylesheets/bootstrap.min.css'/>
+    <link rel='stylesheet' href='http://technogeek.io/stylesheets/bootstrap-theme.min.css'/>
+    <link rel='stylesheet' href='http://technogeek.io/stylesheets/style.css'/>
   </head>
   <body>
-    <div class="container-fluid">
-        <div class="row">
-        	<div class="span12">
+    <div class="navbar navbar-default" role="havigation">
+      <div class="row">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+        	<div class="collapse navbar-collapse" id="site-navbar">
             	<ul class="nav nav-pills pull-right">
             		<li class="active" >
             			<a href="/">
@@ -37,24 +46,36 @@
             </ul>          
           </div>
         </div>
-    		<div class="content">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-		    			<div class="home-logo">
-		    				<div class="span12">
-		    					<h1 class="text-center"><strong>Technogeek Labs</strong><h1>
-		    				</div>
-		    				<div class="span12">
-		    					<h2 class="text-center"><code>In code we trust</code></h2>
-		    				</div>
-		    			</div>
-		    		</div>
-		    	</div>    		
-    		</div>
-    </div>
+      </div>
+      </div>
+  		<div class="content">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+	    			<div class="home-logo">
+	    				<div class="span12">
+	    					<h1 class="text-center"><strong>Technogeek Labs</strong><h1>
+	    				</div>
+	    				<div class="span12">
+	    					<h2 class="text-center"><code>In code we trust</code></h2>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>    		
+  		</div>
   <!-- Seriously, what are you trying to find here, man? -->
-  <script src="./javascripts/jquery-1.11.2.min.js"></script>
-  <script src="./javascripts/bootstrap.min.js"></script>
+  <script src="http://technogeek.io/javascripts/jquery-1.11.2.min.js"></script>
+  <script src="http://technogeek.io/javascripts/bootstrap.min.js"></script>
+  <script>
+    //Stack menu when collapsed
+    $('#site-navbar').on('show.bs.collapse', function() {
+        $('.nav-pills').addClass('nav-stacked');
+    });
+
+    //Unstack menu when not collapsed
+    $('#site-navbar').on('hidden.bs.collapse', function() {
+        $('.nav-pills').removeClass('nav-stacked');
+    });
+  </script>
   </body>
   <footer>
   <h6 class="text-muted text-center">powered by power<h6>

@@ -10,6 +10,12 @@ code, pre {
 	font-family: 'Source Code Pro';
 }
 
+.navber, .navbar-default {
+	border: none;
+	background: none;
+	box-shadow: none;
+}
+
 .home-logo {
 	margin: 130px 0;
 }
@@ -24,4 +30,9 @@ code, pre {
 
 .content {
 	margin: 70px 0;
+}
+
+#site-navbar {
+	border: none;
+	background: none;
 }
