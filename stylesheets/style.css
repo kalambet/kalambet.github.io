@@ -6,7 +6,7 @@ body {
   text-align: center;
 }
 
-code pre {
+code, pre {
 	font-family: 'Source Code Pro';
 }
 
