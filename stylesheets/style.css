@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'Inconsolata';
-  font-style: normal;
-  font-weight: 400;
-  src: local('SourceCodePro'), url(/fonts/SourceCodePro.ttf) format('truetype');
-}
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 
 body {
   padding: 20px 40px 20px 40px;
@@ -11,9 +6,8 @@ body {
   text-align: center;
 }
 
-code {
-	font-family: 'Source Code Pro', ;
-	font-size: 30px;
+code pre {
+	font-family: 'Source Code Pro';
 }
 
 .home-logo {
@@ -22,6 +16,10 @@ code {
 
 .home-logo h1 {
 	font-size: 68px;
+}
+
+.home-logo code {
+	font-size: 30px;
 }
 
 .content {
