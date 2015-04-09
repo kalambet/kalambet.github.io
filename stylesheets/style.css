@@ -7,7 +7,7 @@
 
 body {
   padding: 20px 40px 20px 40px;
-  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -19,7 +19,7 @@ body {
 	font-size: 68px;
 }
 .home code {
-	font-family: 'Inconsolata', sans-serif;
+	font-family: 'Source Code Pro', ;
 	font-size: 30px;
 }
 
