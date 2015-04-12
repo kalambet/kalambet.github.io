@@ -12,6 +12,14 @@ code, pre {
 	font-family: 'Source Code Pro';
 }
 
+/* Merge with TG Blog */
+.sub-body {
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	max-width: 900px;
+}
+
 .navber, .navbar-default {
 	border: none;
 	background: none;
@@ -32,14 +40,6 @@ code, pre {
 
 .content {
 	margin: 70px 0;
-}
-
-/* Merge with TG Blog */
-.sub-body {
-	display: block;
- 	margin-left: auto;
- 	margin-right: auto;
- 	max-width: 900px;
 }
 
 #site-navbar {
