@@ -2,6 +2,8 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+var PERMANENT_URL_PREFIX = '/static/';
+
 var SLIDE_CLASSES = ['far-past', 'past', 'current', 'next', 'far-next'];
 
 var PM_TOUCH_SENSITIVITY = 15;
@@ -438,11 +440,21 @@ function addEventListeners() {
 
 /* Initialization */
 
+function addFontStyle() {
+  var el = document.createElement('link');
+  el.rel = 'stylesheet';
+  el.type = 'text/css';
+  el.href = '//fonts.googleapis.com/css?family=' +
+            'Open+Sans:regular,semibold,italic,italicsemibold|Droid+Sans+Mono';
+
+  document.body.appendChild(el);
+};
+
 function addGeneralStyle() {
   var el = document.createElement('link');
   el.rel = 'stylesheet';
   el.type = 'text/css';
-  el.href = '/styles.css';
+  el.href = PERMANENT_URL_PREFIX + 'styles.css';
   document.body.appendChild(el);
 
   var el = document.createElement('meta');
@@ -464,6 +476,7 @@ function handleDomLoaded() {
 
   setupFrames();
 
+  addFontStyle();
   addGeneralStyle();
   addEventListeners();
 
@@ -480,6 +493,10 @@ function handleDomLoaded() {
 
 function initialize() {
   getCurSlideFromHash();
+
+  if (window['_DEBUG']) {
+    PERMANENT_URL_PREFIX = '../';
+  }
 
   if (window['_DCL']) {
     handleDomLoaded();
@@ -498,7 +515,7 @@ if (!window['_DEBUG'] && document.location.href.indexOf('?debug') !== -1) {
   window['_DEBUG'] = true;
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src = '/slides.js';
+  script.src = '../slides.js';
   var s = document.getElementsByTagName('script')[0];
   s.parentNode.insertBefore(script, s);
 
