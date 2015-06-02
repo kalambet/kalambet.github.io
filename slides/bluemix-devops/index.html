@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>IBM Bluemix and Development Oparations</title>
+    <title>IBM Bluemix and Development Operations</title>
     <meta charset='utf-8'>
     <link rel='stylesheet' href='https://s3.amazonaws.com/technogeek/css/bootstrap.min.css'/>
     <link rel='stylesheet' href='https://s3.amazonaws.com/technogeek/css/bootstrap-theme.min.css'/>
@@ -14,7 +14,7 @@
 
   <section class='slides layout-widescreen'>
     <article>
-      <h1>IBM Bluemix and Development Oparations</h1>
+      <h1>IBM Bluemix and Development Operations</h1>
       </br>
       <div class="presenter">
         <p>
@@ -33,18 +33,14 @@
       </p>
       <ul>
         <li>Auto-Scaling</li>
+        <li>Monitoring and Analytics</li>
         <li>Delivery Pipeline</li>
         <li>Track &amp; Plan</li>
-        <li>Monitoring and Analytics</li>
       </ul>
       <p>
-        <b>Third Party</b>
+        <b>IBM Bluemix DevOps Services</b>
       </p>
-      <ul>
-        <li>Blaze Meter</li>
-        <li>Load IMpact</li>
-        <li>New Relic</li>
-      </ul>
+      <p class="link"><a href="http://hub.jazz.net" target="_blank">http://hub.jazz.net</a></p>
     </article>
 
     <article>
@@ -122,21 +118,119 @@
     </article>
 
     <article>
+      <h3>Monitoring and Analytics</h3>
+      <p>
+        <ul>
+          <li>Availability - базовые метрики доступности</li>
+          <li>Performance Monitoring
+            <ul>
+              <li>Необычные всплески активности CPU</li>
+              <li>Утилизация Heap Memory</li>
+              <li>Утилизация пула потоков</li>
+              <li>Утилизация сборщика мусора</li>
+              <li>Распределение GET/POST по URL (только node.js)</li>
+            </ul>
+          </li>
+          <li>Log Analysis - логрегатор с фильтрацией и поиском, поддерживающий язык запросов</li>
+          <li>План Diagnostics - $0.0321 за инстанс-час, более глубокий анализ node.js и Liberty рантаймов</li>
+        </ul>
+      </p>
+    </article>
+
+    <article>
+      <h3>Как начать писать код для Bluemix?</h3>
+      <p>
+        <ul>
+          <li>Для тех кто знаком с Cloud Foundry - CF command-line tools
+            <ul>
+              <li>Берём код приложения</li>
+              <li><code>cf target http://api.ng.bluemix.net</code></li>
+              <li><code>cf push -f manifext.yml</code></li>
+            </ul>
+          </li>
+          <li>Создём сервис и далее вкладка <em>Start Code</em> на странице приложения в Bluemix
+            <ul>
+              <li>Следуем инструкциям</li>
+              <li>Сами заботимся о подключении CVS/DCVS и Change Management</li>
+              <li> CF command-line tools, см. пункт выше</li>
+            </ul>
+          </li>
+          <li>Создём сервис и далее ссылка <b>'ADD GIT'</b> на странице приложения в Bluemix</li>
+        </ul>
+      </p>
+    </article>
+
+    <article>
+      <h3>Что происходит на стороне DevOps сервисов</h3>
+      <p>
+        <ul>
+          <li>Создаётся одноимённый проект на IBM Bluemix DevOps Services, по-умолчнию репозиторй приватный</li>
+          <li>В репозиторий пушится содежимое стартер-архива</li>
+          <li>Для связки исходников и деплоймент окружения (собственно приложения в Bluemix) создаётся два 'этапа' (stage): <em>Build Stage</em> и <em>Deployment Stage</em> (см. Delivery Pipeline)</li>
+        </ul>
+      </p>
+    </article>
+
+    <article>
       <h3>Delivery Pipeline</h3>
       <p>
+        Позволяет автоматизировать процесс всех основных стадий: build, deploy, run и test
       </p>
+      <ul>
+        <li>Все этапы организуются в конвеер (Pipeline)</li>
+        <li>Каждый этап имеет 3 основные характеристики
+          <ul>
+            <li>Входные данные (Input)</li>
+            <li>Набор работ (Jobs)</li>
+            <li>Свойства окружения (Environment Properties)</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Delivery Pipeline</h3>
+      <p>
+        <ul>
+          <li>Типы входных данных
+            <ul>
+              <li><em>SCM Repository</em> - триггер события по пушу кода в бранч репозитория (пока поддерживается только DevOps Services)</li>
+              <li><em>Build Stage</em> - триггер на окончание стадии сборки</li>
+              <li>Тип <em>None</em> - триггер на окончание предыдущего шага или на ручной запуск этапа</li>
+            </ul>
+          </li>
+          <li>Типы работ
+            <ul>
+              <li><b>Build</b> - Simple, Ant, Gradle, Grunt, ice, Maven, npm, Shell Script</li>
+              <li><b>Deploy</b> - Cloud Foundry, IBM Container</li>
+              <li><b>Test</b> - позволяет указать shell-команду для запуска тестов</li>
+            </ul>
+          </li>
+          <li>До 60 минут билдов в месяц и до двух инстансов в месяц бесплатно на каждое приложение (каждый проект)</li>
+        </ul>
+      </p> 
     </article>
 
     <article>
       <h3>Track &amp; Plan</h3>
       <p>
+        Agile(Scrum), управление проектами
       </p>
+      <ul>
+        <li>Sprint, Backlog, Triage</li>
+        <li>Одна единица работы называется Work Item</li>
+        <li>Для публичных репозиотриев сервис бесплатен, для приватных - бесплатно до 3-х ползователей</li>
+      </ul>
     </article>
 
     <article>
-      <h3>Monitoring and Analytics</h3>
-      <p>
-      </p>
+      <h3>Что ещё есть в IBM Bluemix DevOps Services?</h3>
+      <ul>
+        <li>Полноценный git-репозиторий с возможностями форка, бранчами и всей кухней</li>
+        <li>Online-редактор на базе Eclipse Orion со всем достоинствами и недостатками Eclipse</li>
+        <li>Как следстие предыдущего пункта - полноценный git-клиент</li>
+        <li>Shell c предустановленными CF command-line tools <code>cfo</code></li>
+      </ul>
     </article>
 
     <article>
