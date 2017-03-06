@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic);
+
+body {
+	padding: 20px 40px 20px 40px;
+	margin: 0 auto;
+}
+
+.sub-body {
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	max-width: 900px;
+}
+
+.nav-pills a{
+	color: #333;
+}
+
+.nav-pills li a:hover {
+	color: #E37151;
+}
+
+.navber, .navbar-default {
+	border: none;
+	background: none;
+	box-shadow: none;
+}
+
+@media (min-width: 750px) {
+	.home-logo {
+		margin: 110px 0;
+	}
+
+	.home-logo h1 {
+		font-size: 68px;
+	}
+
+	.home-logo code {
+		font-size: 30px;
+	}
+
+	.content {
+		margin: 50px 0;
+	}
+}
+
+#site-navbar {
+	border: none;
+	background: none;
+}
