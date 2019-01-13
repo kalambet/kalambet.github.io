@@ -442,7 +442,7 @@ function addGeneralStyle() {
   var el = document.createElement('link');
   el.rel = 'stylesheet';
   el.type = 'text/css';
-  el.href = 'https://s3.amazonaws.com/technogeekslides/styles.css';
+  el.href = 'https://technogeek.io/slides/styles.css';
   document.body.appendChild(el);
 
   var el = document.createElement('meta');
