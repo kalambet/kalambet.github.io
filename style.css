@@ -1,0 +1,106 @@
+@import url("//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css");
+@import url("//code.cdn.mozilla.net/fonts/fira.css");
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+	body {
+		background: white;
+		color: #333;
+	}
+
+	.svg-filler {
+		fill: #333
+	}
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+	body {
+		background: #333;
+		color: white;
+	}
+
+	.svg-filler {
+		fill: white;
+	}
+}
+
+body {
+	font-family: 'Fira Sans', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	min-height: 100vh;
+}
+
+header {
+	font-size: 200%;
+	font-family: Hack, monospace;
+	text-align: center;
+}
+
+info {
+	display: flex;
+	flex-direction: column;
+	margin-left: 15ch;
+	margin-right: 15ch;
+}
+
+entry {
+	font-size: 150%;
+	margin-bottom: 2ch;
+}
+
+links {
+	display: flex;
+}
+
+service {
+	width: 50px;
+	height: 50px;
+	margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+	/* start of medium tablet styles */
+	header {
+		font-size: 170%;
+	}
+
+	info {
+		margin-left: 7ch;
+		margin-right: 7ch;
+	}
+
+	entry {
+		font-size: 130%;
+	}
+
+	service {
+		width: 35px;
+		height: 35px;
+	}
+
+}
+
+@media screen and (max-width: 479px) {
+	/* start of phone styles */
+	header {
+		font-size: 120%;
+	}
+
+	info {
+		margin-left: 1ch;
+		margin-right: 1ch;
+	}
+
+
+	entry {
+		font-size: 100%;
+	}
+
+	service {
+		width: 25px;
+		height: 25px;
+	}
+}
