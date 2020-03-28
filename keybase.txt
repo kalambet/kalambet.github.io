@@ -4,47 +4,49 @@ https://keybase.io/kalambet
 
 I hereby claim:
 
-  * I am an admin of https://technogeek.io
+  * I am an admin of https://kalambet.dev
   * I am kalambet (https://keybase.io/kalambet) on keybase.
-  * I have a public key ASAkhU256Xn8VvrBOudFg8olCLtgRNe0Dpptk2a51gl2ogo
+  * I have a public key ASDu4KdqUpQ1pgUlK3W2SzYGM8SKKG-ZjP4Ach0ZybvKLgo
 
 To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "eldest_kid": "0101ecbdf3fc15f29e70fd1500f208b0a0478ebee2d5109798e972e177a45976965f0a",
-            "host": "keybase.io",
-            "kid": "012024854db9e979fc56fac13ae74583ca2508bb6044d7b40e9a6d9366b9d60976a20a",
-            "uid": "504d0314bb40ba65aa8a791adfd76619",
-            "username": "kalambet"
-        },
-        "service": {
-            "hostname": "technogeek.io",
-            "protocol": "https:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "0101ecbdf3fc15f29e70fd1500f208b0a0478ebee2d5109798e972e177a45976965f0a",
+      "host": "keybase.io",
+      "kid": "0120eee0a76a529435a605252b75b64b360633c48a286f998cfe00721d19c9bbca2e0a",
+      "uid": "504d0314bb40ba65aa8a791adfd76619",
+      "username": "kalambet"
     },
-    "client": {
-        "name": "keybase.io go client",
-        "version": "1.0.23"
-    },
-    "ctime": 1497256791,
-    "expire_in": 504576000,
     "merkle_root": {
-        "ctime": 1497256746,
-        "hash": "42d23d6858eaed788aa5f271bc3e76b22a8c6c8e4090b1fdb95b1dee8db0584d511094f8d549bea2ca4c9c3c877d4a035aa253e2d16895734d25c281e44c2cf6",
-        "seqno": 1162874
+      "ctime": 1585403639,
+      "hash": "a9da20816714806d9cdaf3c2b5e0484c5bf5cd5f985a3f27e88d42a2d6c3c4fe15ef04824c5ae679ed8434281755fd8a9ce7d466a0f659ea2bb9d48babd074f0",
+      "hash_meta": "13a3c9f631b567e843c727284397ed6ea4b52ef0c8a4c114347e992e6b764bf6",
+      "seqno": 15655675
     },
-    "prev": "9c4ad9ec8b9755d7357095b3d04230f1da014f6e7ab2d7eebdcfbe5e6612e874",
-    "seqno": 18,
-    "tag": "signature"
+    "service": {
+      "entropy": "JduLlctymAFNcmYIEJxSUkYD",
+      "hostname": "kalambet.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.3.0"
+  },
+  "ctime": 1585403650,
+  "expire_in": 504576000,
+  "prev": "5b71ca3268b8cb050330971be7565bea1c248480e18381bbc5e8aa9eec4aaee9",
+  "seqno": 69,
+  "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgJIVNuel5/Fb6wTrnRYPKJQi7YETXtA6abZNmudYJdqIKp3BheWxvYWTFAvd7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxZWNiZGYzZmMxNWYyOWU3MGZkMTUwMGYyMDhiMGEwNDc4ZWJlZTJkNTEwOTc5OGU5NzJlMTc3YTQ1OTc2OTY1ZjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMjQ4NTRkYjllOTc5ZmM1NmZhYzEzYWU3NDU4M2NhMjUwOGJiNjA0NGQ3YjQwZTlhNmQ5MzY2YjlkNjA5NzZhMjBhIiwidWlkIjoiNTA0ZDAzMTRiYjQwYmE2NWFhOGE3OTFhZGZkNzY2MTkiLCJ1c2VybmFtZSI6ImthbGFtYmV0In0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJ0ZWNobm9nZWVrLmlvIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMjMifSwiY3RpbWUiOjE0OTcyNTY3OTEsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ5NzI1Njc0NiwiaGFzaCI6IjQyZDIzZDY4NThlYWVkNzg4YWE1ZjI3MWJjM2U3NmIyMmE4YzZjOGU0MDkwYjFmZGI5NWIxZGVlOGRiMDU4NGQ1MTEwOTRmOGQ1NDliZWEyY2E0YzljM2M4NzdkNGEwMzVhYTI1M2UyZDE2ODk1NzM0ZDI1YzI4MWU0NGMyY2Y2Iiwic2Vxbm8iOjExNjI4NzR9LCJwcmV2IjoiOWM0YWQ5ZWM4Yjk3NTVkNzM1NzA5NWIzZDA0MjMwZjFkYTAxNGY2ZTdhYjJkN2VlYmRjZmJlNWU2NjEyZTg3NCIsInNlcW5vIjoxOCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxECev814qYYIjPEWpVt8ifRCD+FURWHIEF5mMBZUEDfOAf9pKTAkpdjeyt1b5K6hgLJov4dVn07u+Vk4xvh9MnUNqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgcuvXSpuQlliKXuXRv+NbUfxqlG5H1v5wPOYs4Gcfa/SjdGFnzQICp3ZlcnNpb24B
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg7uCnalKUNaYFJSt1tks2BjPEiihvmYz+AHIdGcm7yi4Kp3BheWxvYWTESpcCRcQgW3HKMmi4ywUDMJcb51Zb6hwkhIDhg4G7xeiqnuxKrunEIPo92UQBgcfPZLlelpLeIKRsvGVxYlGAM07IzBp4n6/nAgHCo3NpZ8RAbWjilMEJw72fjphcMF9Iiy4Fs0hQLSRdZ8xMwOLzej/HUlKThjRr2qJaS1nXy2SqTWGXOBMhHgubMZXof1h5DqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDo06+G+5AVMIRNhBKMzfnQCFBmSq+msSJ+peTy0HZM9o3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
