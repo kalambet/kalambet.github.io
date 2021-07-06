@@ -11,6 +11,10 @@
 	.svg-filler {
 		fill: #333
 	}
+
+	a {
+		color:#333;
+	}
 }
 
 /* Dark mode */
@@ -22,6 +26,10 @@
 
 	.svg-filler {
 		fill: white;
+	}
+
+	a {
+		color:white;
 	}
 }
 
